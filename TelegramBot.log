@@ -1,0 +1,759 @@
+[06/13/2024 09:14:31 PM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/13/2024 10:07:13 PM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/13/2024 10:07:13 PM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/13/2024 10:20:56 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 555, in cb_handler
+    await query.message.edit_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2803, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[06/13/2024 10:53:02 PM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/13/2024 11:06:23 PM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/13/2024 11:10:30 PM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 01:07:58 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 02:12:45 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 02:16:18 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 03:39:43 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 03:39:47 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:07:51 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:07:57 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:08:06 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:08:38 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:42:55 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 04:51:05 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:51:06 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 04:56:40 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 04:59:12 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 674, in auto_filter
+    imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 06:01:46 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 06:04:38 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 52, in answer
+    files, next_offset, total = await get_search_results(string,
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 06:04:38 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 52, in answer
+    files, next_offset, total = await get_search_results(string,
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 06:04:39 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 52, in answer
+    files, next_offset, total = await get_search_results(string,
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 06:11:12 AM:pyrogram.dispatcher:253:ERROR] 'NoneType' object has no attribute 'type'
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/index.py", line 63, in send_for_index
+    elif message.forward_from_chat.type == enums.ChatType.CHANNEL:
+AttributeError: 'NoneType' object has no attribute 'type'
+[06/14/2024 06:13:15 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 06:32:37 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 06:32:47 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 06:33:03 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 06:33:06 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 07:19:56 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 07:36:51 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 674, in auto_filter
+    imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 07:38:01 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 07:38:19 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 07:38:21 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 07:42:06 AM:pyrogram.dispatcher:253:ERROR] name 'imdb' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 628, in auto_filter
+    return await advantage_spell_chok(msg)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 759, in advantage_spell_chok
+    imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
+  File "/home/ubuntu/movie-bot/utils.py", line 91, in get_poster
+    movieid = imdb.search_movie(title.lower(), results=10)
+NameError: name 'imdb' is not defined
+[06/14/2024 07:57:12 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 08:10:30 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 08:10:32 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 08:10:35 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+[06/14/2024 08:11:42 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:11:56 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:12:29 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:12:36 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:12:36 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:13:03 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:19:17 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 625, in auto_filter
+    files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 08:22:24 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:22:29 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:22:31 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:24:22 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 08:30:31 AM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 433, in cb_handler
+    await query.message.edit_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2803, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[06/14/2024 08:40:58 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 52, in answer
+    files, next_offset, total = await get_search_results(string,
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 08:40:59 AM:pyrogram.dispatcher:253:ERROR] not enough values to unpack (expected 3, got 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 52, in answer
+    files, next_offset, total = await get_search_results(string,
+ValueError: not enough values to unpack (expected 3, got 0)
+[06/14/2024 09:00:48 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 09:00:56 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 09:00:57 AM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 497, in cb_handler
+    await query.message.edit_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2803, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[06/14/2024 09:08:36 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 09:29:08 AM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[06/14/2024 09:47:11 AM:root:91:ERROR] Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 82, in answer
+    await query.answer(results=results,
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-enviornment/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.DocumentInvalid: Telegram says: [400 DOCUMENT_INVALID] - The document is invalid (caused by "messages.SetInlineBotResults")
