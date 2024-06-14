@@ -38,7 +38,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 
-AUTO_DELETE = 150
+AUTO_DELETE = 200
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
