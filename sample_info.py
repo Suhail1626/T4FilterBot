@@ -1,6 +1,6 @@
 # Bot information
 SESSION = 'Media_search'
-USER_SESSION = 'User_Bot'
+USER_SESSION = ''
 API_ID = 
 API_HASH = ''
 BOT_TOKEN = ''
